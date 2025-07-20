@@ -436,15 +436,13 @@ create_load_balancer() {
         hcloud load-balancer add-service k8s-lb \
             --protocol http \
             --listen-port 80 \
-            --destination-port 30080 \
-            --proxyprotocol
+            --destination-port 30080
         
         # HTTPS Service hinzufügen
         hcloud load-balancer add-service k8s-lb \
             --protocol https \
             --listen-port 443 \
-            --destination-port 30443 \
-            --proxyprotocol
+            --destination-port 30443
         
         # Worker Nodes als Targets hinzufügen
         for i in $(seq 1 $WORKER_COUNT); do
