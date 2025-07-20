@@ -38,7 +38,7 @@ log_error() {
 HCLOUD_TOKEN="${HCLOUD_TOKEN:-}"  # Setze als Umgebungsvariable oder hier direkt
 PROJECT_NAME="k8s-cluster"
 LOCATION="nbg1"  # nbg1, fsn1, hel1
-SERVER_TYPE="cx21"  # cx11, cx21, cx31, cx41, cx51
+SERVER_TYPE="cx22"  # cx11, cx21, cx31, cx41, cx51
 LB_TYPE="lb11"    # lb11, lb21, lb31
 
 # Cluster Konfiguration
